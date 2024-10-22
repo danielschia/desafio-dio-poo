@@ -27,6 +27,9 @@ public class Main {
     bootcamp.getConteudos().add(curso1);
     bootcamp.getConteudos().add(mentoria);
 
+    System.out.println("XP total que o Bootcamp Java Developer tem: " + bootcamp.xpTotal());
+
+
     Dev dev = new Dev();
     dev.setNome("Daniel");
     dev.inscreverBootcamp(bootcamp);

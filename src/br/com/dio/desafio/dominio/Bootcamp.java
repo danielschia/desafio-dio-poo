@@ -15,6 +15,12 @@ public class Bootcamp {
   private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
 
+  public double xpTotal() {
+    return this.conteudos
+        .stream()
+        .mapToDouble(conteudo -> conteudo.calcularXp())
+        .sum();
+  }
 
   public String getNome() {
     return this.nome;
